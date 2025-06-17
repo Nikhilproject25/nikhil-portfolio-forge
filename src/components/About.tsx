@@ -1,38 +1,98 @@
 
+import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
+
 export const About = () => {
   return (
-    <div className="container mx-auto px-6">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-900 mb-8">About Me</h2>
-        
-        <div className="prose prose-lg max-w-none text-gray-600">
-          <p className="text-xl leading-relaxed mb-6">
-            I'm a passionate Full Stack Developer with a strong focus on backend engineering, 
-            bringing over 5+ years of professional experience in building scalable, high-performance 
-            applications that solve real-world business challenges.
-          </p>
-          
-          <p className="text-lg leading-relaxed mb-6">
-            My expertise lies in creating robust backend systems using <strong>Java</strong> and 
-            <strong> Spring Boot</strong>, designing and implementing <strong>RESTful APIs</strong>, 
-            and architecting databases with <strong>PostgreSQL</strong>. I have extensive experience 
-            with cloud platforms including <strong>AWS</strong> and <strong>GCP</strong>, utilizing 
-            services like Lambda, EC2, S3, and BigQuery to build scalable solutions.
-          </p>
-          
-          <p className="text-lg leading-relaxed mb-8">
-            I believe in clean architecture, maintainable code, and continuous learning. 
-            My approach to development focuses on understanding business requirements deeply 
-            and translating them into efficient, scalable technical solutions. Whether it's 
-            optimizing database queries, implementing microservices, or setting up CI/CD pipelines, 
-            I'm committed to delivering excellence in every project.
-          </p>
-          
-          <div className="bg-primary/10 rounded-lg p-6 border-l-4 border-primary">
-            <p className="text-lg font-medium text-gray-800 italic">
-              "I solve real-world business problems through scalable backend systems 
-              and real-time cloud integration."
+    <div className="max-w-4xl mx-auto">
+      <h2 className="text-4xl font-bold text-white mb-8">About Me</h2>
+      
+      <div className="grid lg:grid-cols-3 gap-8">
+        <div className="lg:col-span-2">
+          <div className="prose prose-lg text-gray-300 leading-relaxed">
+            <p className="text-xl mb-6">
+              Experienced full stack engineer with 5+ years delivering scalable backend systems 
+              and cloud-native solutions. Proficient in Java, Spring Boot, REST APIs, AWS, Docker, 
+              and distributed data pipelines.
             </p>
+            
+            <p className="text-lg mb-6">
+              I focus on solving real-world problems through clean code, system design, and 
+              AI-enhanced automation. My expertise spans from architecting microservices to 
+              implementing CI/CD pipelines that ensure reliable, scalable deployments.
+            </p>
+            
+            <div className="bg-blue-600/10 border border-blue-600/20 rounded-lg p-6 mt-8">
+              <p className="text-lg font-medium text-blue-400 italic">
+                "I solve real-world business problems through scalable backend systems 
+                and real-time cloud integration."
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div className="bg-gray-800 rounded-lg p-6">
+          <div className="w-32 h-32 bg-gray-700 rounded-full mx-auto mb-6 flex items-center justify-center">
+            <img 
+              src="/lovable-uploads/701c4f21-f9f2-4793-830e-4aa9ab43485e.png" 
+              alt="Nikhil Kumar" 
+              className="w-full h-full rounded-full object-cover"
+            />
+          </div>
+          
+          <div className="space-y-4">
+            <div className="flex items-center space-x-3 text-gray-300">
+              <Mail className="w-5 h-5 text-blue-400" />
+              <a href="mailto:nikhilpersonall2299@gmail.com" className="hover:text-blue-400 transition-colors">
+                nikhilpersonall2299@gmail.com
+              </a>
+            </div>
+            
+            <div className="flex items-center space-x-3 text-gray-300">
+              <Phone className="w-5 h-5 text-blue-400" />
+              <a href="tel:+14793438881" className="hover:text-blue-400 transition-colors">
+                +1 (479) 343-8881
+              </a>
+            </div>
+            
+            <div className="flex items-center space-x-3 text-gray-300">
+              <MapPin className="w-5 h-5 text-blue-400" />
+              <span>United States</span>
+            </div>
+            
+            <div className="pt-4 border-t border-gray-700">
+              <div className="flex space-x-4">
+                <a 
+                  href="https://github.com/Nikhilproject25" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  <Github className="w-5 h-5" />
+                  <span>GitHub</span>
+                </a>
+                
+                <a 
+                  href="https://www.linkedin.com/in/nikhil-k-bb6304228/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  <Linkedin className="w-5 h-5" />
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+              
+              <div className="mt-3">
+                <a 
+                  href="https://leetcode.com/u/nU9UHSuW4E/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors"
+                >
+                  LeetCode Profile
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

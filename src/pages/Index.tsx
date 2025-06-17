@@ -1,20 +1,20 @@
 
 import { useState, useEffect } from 'react';
-import { Hero } from '@/components/Hero';
-import { Navigation } from '@/components/Navigation';
+import { Sidebar } from '@/components/Sidebar';
 import { About } from '@/components/About';
 import { Skills } from '@/components/Skills';
+import { AITools } from '@/components/AITools';
 import { Projects } from '@/components/Projects';
-import { Links } from '@/components/Links';
+import { Experience } from '@/components/Experience';
+import { Education } from '@/components/Education';
 import { Contact } from '@/components/Contact';
-import { ScheduleMeeting } from '@/components/ScheduleMeeting';
 
 const Index = () => {
-  const [activeSection, setActiveSection] = useState('hero');
+  const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'skills', 'projects', 'links', 'contact'];
+      const sections = ['about', 'skills', 'ai-tools', 'projects', 'experience', 'education', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -40,34 +40,38 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation activeSection={activeSection} onNavigate={scrollToSection} />
+    <div className="min-h-screen bg-gray-900 text-gray-100 flex">
+      <Sidebar activeSection={activeSection} onNavigate={scrollToSection} />
       
-      <section id="hero">
-        <Hero onNavigate={scrollToSection} />
-      </section>
+      <main className="flex-1 ml-64 overflow-y-auto">
+        <section id="about" className="min-h-screen p-8">
+          <About />
+        </section>
 
-      <section id="about" className="py-20 bg-gray-50">
-        <About />
-      </section>
+        <section id="skills" className="min-h-screen p-8 bg-gray-800/50">
+          <Skills />
+        </section>
 
-      <section id="skills" className="py-20">
-        <Skills />
-      </section>
+        <section id="ai-tools" className="min-h-screen p-8">
+          <AITools />
+        </section>
 
-      <section id="projects" className="py-20 bg-gray-50">
-        <Projects />
-      </section>
+        <section id="projects" className="min-h-screen p-8 bg-gray-800/50">
+          <Projects />
+        </section>
 
-      <section id="links" className="py-20">
-        <Links />
-      </section>
+        <section id="experience" className="min-h-screen p-8">
+          <Experience />
+        </section>
 
-      <section id="contact" className="py-20 bg-gray-50">
-        <Contact />
-      </section>
+        <section id="education" className="min-h-screen p-8 bg-gray-800/50">
+          <Education />
+        </section>
 
-      <ScheduleMeeting />
+        <section id="contact" className="min-h-screen p-8">
+          <Contact />
+        </section>
+      </main>
     </div>
   );
 };
