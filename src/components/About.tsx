@@ -10,21 +10,32 @@ export const About = () => {
         <div className="lg:col-span-2">
           <div className="prose prose-lg text-gray-300 leading-relaxed">
             <p className="text-xl mb-6">
-              Experienced full stack engineer with 5+ years delivering scalable backend systems 
-              and cloud-native solutions. Proficient in Java, Spring Boot, REST APIs, AWS, Docker, 
-              and distributed data pipelines.
+              Experienced full stack engineer with 5+ years delivering enterprise-grade, scalable backend systems 
+              and cloud-native solutions across financial services and technology sectors. Expert in architecting 
+              robust microservices using Java, Spring Boot, REST APIs, AWS, Docker, and distributed data pipelines 
+              that handle millions of transactions daily.
             </p>
             
             <p className="text-lg mb-6">
-              I focus on solving real-world problems through clean code, system design, and 
-              AI-enhanced automation. My expertise spans from architecting microservices to 
-              implementing CI/CD pipelines that ensure reliable, scalable deployments.
+              I specialize in transforming complex business requirements into clean, maintainable code architectures. 
+              My approach combines traditional software engineering excellence with cutting-edge AI tools—leveraging 
+              ChatGPT, Claude, and Gemini daily for code optimization, architecture reviews, and rapid prototyping. 
+              This AI-enhanced workflow allows me to deliver solutions 40% faster while maintaining enterprise-level 
+              quality standards.
+            </p>
+
+            <p className="text-lg mb-6">
+              At State Street and BNY Mellon, I've built mission-critical systems processing billions in transactions, 
+              implemented zero-downtime deployment strategies, and mentored junior developers in best practices. 
+              My expertise spans from designing fault-tolerant distributed systems to implementing comprehensive 
+              CI/CD pipelines that ensure reliable, scalable deployments across multi-cloud environments.
             </p>
             
             <div className="bg-blue-600/10 border border-blue-600/20 rounded-lg p-6 mt-8">
               <p className="text-lg font-medium text-blue-400 italic">
-                "I solve real-world business problems through scalable backend systems 
-                and real-time cloud integration."
+                "I solve real-world business problems through scalable backend systems, 
+                real-time cloud integration, and AI-enhanced development practices that 
+                accelerate innovation while maintaining enterprise reliability."
               </p>
             </div>
           </div>
