@@ -39,13 +39,12 @@ const Index = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    // Close mobile menu after navigation
     setIsMobileMenuOpen(false);
   };
 
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 flex relative">
-      {/* Mobile Menu Button */}
+      {/* Mobile Menu Button - Only visible on mobile */}
       <button
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         className="fixed top-4 left-4 z-50 lg:hidden bg-gray-800 text-white p-2 rounded-lg shadow-lg"
@@ -53,7 +52,7 @@ const Index = () => {
         {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
 
-      {/* Mobile Backdrop */}
+      {/* Mobile Backdrop - Only on mobile when menu is open */}
       {isMobileMenuOpen && (
         <div 
           className="fixed inset-0 bg-black/50 z-40 lg:hidden"
@@ -61,40 +60,42 @@ const Index = () => {
         />
       )}
 
-      {/* Sidebar */}
-      <div className={`fixed lg:static inset-y-0 left-0 z-40 transform lg:transform-none transition-transform duration-300 ease-in-out ${
-        isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
-      }`}>
+      {/* Sidebar - Fixed on desktop, sliding on mobile */}
+      <div className={`
+        fixed lg:static inset-y-0 left-0 z-40 w-64
+        transform lg:transform-none transition-transform duration-300 ease-in-out
+        ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
+      `}>
         <Sidebar activeSection={activeSection} onNavigate={scrollToSection} />
       </div>
       
-      {/* Main Content */}
-      <main className="flex-1 lg:ml-64 overflow-y-auto">
-        <section id="about" className="min-h-screen p-4 lg:p-8 pt-16 lg:pt-8">
+      {/* Main Content - Properly offset on desktop, full width on mobile */}
+      <main className="flex-1 lg:ml-0 overflow-y-auto">
+        <section id="about" className="min-h-screen p-4 md:p-6 lg:p-8 pt-16 lg:pt-8">
           <About />
         </section>
 
-        <section id="skills" className="min-h-screen p-4 lg:p-8 bg-gray-800/50">
+        <section id="skills" className="min-h-screen p-4 md:p-6 lg:p-8 bg-gray-800/50">
           <Skills />
         </section>
 
-        <section id="ai-tools" className="min-h-screen p-4 lg:p-8">
+        <section id="ai-tools" className="min-h-screen p-4 md:p-6 lg:p-8">
           <AITools />
         </section>
 
-        <section id="experience" className="min-h-screen p-4 lg:p-8 bg-gray-800/50">
+        <section id="experience" className="min-h-screen p-4 md:p-6 lg:p-8 bg-gray-800/50">
           <Experience />
         </section>
 
-        <section id="projects" className="min-h-screen p-4 lg:p-8">
+        <section id="projects" className="min-h-screen p-4 md:p-6 lg:p-8">
           <Projects />
         </section>
 
-        <section id="education" className="min-h-screen p-4 lg:p-8 bg-gray-800/50">
+        <section id="education" className="min-h-screen p-4 md:p-6 lg:p-8 bg-gray-800/50">
           <Education />
         </section>
 
-        <section id="contact" className="min-h-screen p-4 lg:p-8">
+        <section id="contact" className="min-h-screen p-4 md:p-6 lg:p-8">
           <Contact />
         </section>
       </main>
