@@ -1,6 +1,7 @@
 
 const aiTools = [
   { name: 'ChatGPT', company: 'OpenAI', type: 'Conversational AI' },
+  { name: 'GitHub Copilot', company: 'Microsoft', type: 'Pair Programming' },
   { name: 'Claude', company: 'Anthropic', type: 'AI Assistant' },
   { name: 'Gemini', company: 'Google AI', type: 'Multimodal AI' },
   { name: 'Mistral', company: 'Mistral AI', type: 'Language Model' },
@@ -16,7 +17,8 @@ const specialties = [
   'API Integration',
   'AI Workflow Automation',
   'Model Fine-tuning',
-  'AI-powered Development'
+  'AI-powered Development',
+  'Vibe Coding'
 ];
 
 export const AITools = () => {

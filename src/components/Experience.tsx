@@ -33,7 +33,7 @@ const experiences = [
       'Implemented cron jobs for scheduled data extraction and transformation',
       'Documented technical workflows, APIs, and ETL processes for knowledge sharing'
     ],
-    technologies: ['Spring Boot', 'AWS', 'ReactJS', 'PostgreSQL', 'Jenkins', 'JWT']
+    technologies: ['Spring Boot', 'AWS', 'ReactJS', 'PostgreSQL', 'Jenkins', 'JWT', 'GIT', 'Flyway', 'Maven', 'Agile', 'Junit', 'REST API']
   },
   {
     id: 2,
@@ -48,9 +48,13 @@ const experiences = [
       'Implemented OAuth2 security with Spring Security',
       'Applied SOLID principles and Test-Driven Development practices',
       'Integrated with Docker and Kubernetes',
-      'Experience of using Git/Bitbucket, Maven, &amp; related tools'
+      'Experience of using Git/Bitbucket, Maven, related tools',
+      'Designed and implemented RESTful APIs to support backend operations, ensuring scalability and maintainability',
+      'Strong experience and knowledge of real-time data analytics using Spark Streaming and Kafka',
+      'Expertise in Core Java concepts like Collections, Exception Handling, Multi-Threading, and Java I/O',
+      'Collaborated with business stakeholders to gather requirements and provide end-to-end solutions using Agile best practices'
     ],
-    technologies: ['Kafka', 'Spark', 'GCP', 'MongoDB', 'Cosmos DB', 'OAuth2', 'TDD']
+    technologies: ['Spring Boot', 'Junit', 'Kafka', 'Spark', 'GCP', 'MongoDB', 'Cosmos DB', 'OAuth2', 'TDD', 'Docker', 'Kubernetes']
   },
   {
     id: 3,
@@ -65,9 +69,12 @@ const experiences = [
       'Deployed applications on OpenShift Kubernetes',
       'Achieved 90% test coverage using JUnit and Mockito',
       'Created batch processing jobs using Spring Batch to handle large-scale data processing efficiently',
-      'Performed data validation using SQL scripts to ensure data accuracy and integrity during ETL workflows'
+      'Performed data validation using SQL scripts to ensure data accuracy and integrity during ETL workflows',
+      'Implemented authentication and authorization using Spring Security, ensuring secure user access',
+      'Hands-on experience with real-time messaging and streaming technologies such as Kafka to handle high-throughput data pipelines',
+      'Developed interactive user interfaces using JavaScript and React.js'
     ],
-    technologies: ['Kafka', 'Microservices', 'Docker', 'Kubernetes', 'JUnit', 'Mockito']
+    technologies: ['Kafka', 'Microservices', 'Docker', 'Kubernetes', 'JUnit', 'Mockito', 'Maven', 'React.js']
   }
 ];
 
