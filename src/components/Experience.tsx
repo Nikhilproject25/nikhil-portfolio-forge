@@ -12,11 +12,26 @@ const experiences = [
     period: 'Feb 2024 – Present',
     location: 'Boston, MA',
     achievements: [
-      'Built Spring Boot microservices for financial data processing',
-      'Automated AWS deployment pipelines using Lambda, S3, and EC2',
-      'Developed ReactJS frontend with PostgreSQL integration',
-      'Implemented CI/CD with Jenkins and GitHub Actions',
-      'Integrated JWT authentication with Active Directory'
+      'Designed and implemented RESTful APIs using Spring Boot for seamless front-end/back-end integration',
+      'Used JWT for secure authentication and authorization, ensuring robust data protection',
+      'Led the adoption of JUnit and Mockito, achieving 90% unit test coverage',
+      'Implemented S3 event notifications to trigger Lambda functions for real-time file processing',
+      'Designed and optimized PostgreSQL relational database schemas, improving query performance and data integrity',
+      'Extracted and processed data from XML, CSV, and other file formats for analytics and reporting',
+      'Deployed and managed Java applications on AWS EC2',
+      'Established LDAP connections for secure and seamless user access management',
+      'Integrated Flyway with PostgreSQL Server to manage schema changes across databases',
+      'Utilized OpenSearch to monitor application logs',
+      'Implemented authentication and authorization using Spring Security',
+      'Used React to display dynamic data retrieved from PostgreSQL via backend APIs, ensuring real-time updates',
+      'Designed and implemented dynamic email templates and notification systems',
+      'Collaborated with the UI team to design and develop interactive dashboards using ReactJS',
+      'Developed and optimized complex SQL scripts for data retrieval, transformation, and reporting',
+      'Integrated React applications with JWT for secure access and session management with Spring Security',
+      'Set up and maintained CI/CD pipelines using Jenkins and GitHub Actions for Java applications',
+      'Integrated Flyway with Spring Boot applications to synchronize database migrations',
+      'Implemented cron jobs for scheduled data extraction and transformation',
+      'Documented technical workflows, APIs, and ETL processes for knowledge sharing'
     ],
     technologies: ['Spring Boot', 'AWS', 'ReactJS', 'PostgreSQL', 'Jenkins', 'JWT']
   },
@@ -31,7 +46,9 @@ const experiences = [
       'Deployed scalable solutions on Google Cloud Platform',
       'Optimized MongoDB and Cosmos DB performance',
       'Implemented OAuth2 security with Spring Security',
-      'Applied SOLID principles and Test-Driven Development practices'
+      'Applied SOLID principles and Test-Driven Development practices',
+      'Integrated with Docker and Kubernetes',
+      'Experience of using Git/Bitbucket, Maven, &amp; related tools'
     ],
     technologies: ['Kafka', 'Spark', 'GCP', 'MongoDB', 'Cosmos DB', 'OAuth2', 'TDD']
   },
@@ -46,7 +63,9 @@ const experiences = [
       'Implemented lazy loading and Webpack optimization',
       'Managed SQL databases with Docker containerization',
       'Deployed applications on OpenShift Kubernetes',
-      'Achieved 90% test coverage using JUnit and Mockito'
+      'Achieved 90% test coverage using JUnit and Mockito',
+      'Created batch processing jobs using Spring Batch to handle large-scale data processing efficiently',
+      'Performed data validation using SQL scripts to ensure data accuracy and integrity during ETL workflows'
     ],
     technologies: ['Kafka', 'Microservices', 'Docker', 'Kubernetes', 'JUnit', 'Mockito']
   }

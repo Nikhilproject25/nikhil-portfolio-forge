@@ -19,16 +19,9 @@ export const About = () => {
             <p className="text-lg mb-6">
               I specialize in transforming complex business requirements into clean, maintainable code architectures. 
               My approach combines traditional software engineering excellence with cutting-edge AI tools—leveraging 
-              ChatGPT, Claude, and Gemini daily for code optimization, architecture reviews, and rapid prototyping. 
+              GitHub Copilot daily for code optimization, architecture reviews, and rapid prototyping.
               This AI-enhanced workflow allows me to deliver solutions 40% faster while maintaining enterprise-level 
               quality standards.
-            </p>
-
-            <p className="text-lg mb-6">
-              At State Street and BNY Mellon, I've built mission-critical systems processing billions in transactions, 
-              implemented zero-downtime deployment strategies, and mentored junior developers in best practices. 
-              My expertise spans from designing fault-tolerant distributed systems to implementing comprehensive 
-              CI/CD pipelines that ensure reliable, scalable deployments across multi-cloud environments.
             </p>
             
             <div className="bg-blue-600/10 border border-blue-600/20 rounded-lg p-6 mt-8">
