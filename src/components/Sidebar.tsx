@@ -1,5 +1,5 @@
 
-import { User, Code, Cpu, Briefcase, Building2, GraduationCap, Mail } from 'lucide-react';
+import { User, Code, Cpu, Building2, Briefcase, GraduationCap, Mail } from 'lucide-react';
 
 interface SidebarProps {
   activeSection: string;
@@ -10,8 +10,8 @@ const navItems = [
   { id: 'about', label: 'About', icon: User },
   { id: 'skills', label: 'Skills', icon: Code },
   { id: 'ai-tools', label: 'AI Tools', icon: Cpu },
-  { id: 'projects', label: 'Projects', icon: Briefcase },
   { id: 'experience', label: 'Experience', icon: Building2 },
+  { id: 'projects', label: 'Projects', icon: Briefcase },
   { id: 'education', label: 'Education', icon: GraduationCap },
   { id: 'contact', label: 'Contact', icon: Mail },
 ];

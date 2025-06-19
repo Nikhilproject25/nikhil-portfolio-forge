@@ -43,8 +43,8 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100 flex relative">
-      {/* Mobile Menu Button - Only visible on mobile */}
+    <div className="min-h-screen bg-gray-900 text-gray-100 flex">
+      {/* Mobile Menu Button */}
       <button
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         className="fixed top-4 left-4 z-50 lg:hidden bg-gray-800 text-white p-2 rounded-lg shadow-lg"
@@ -52,7 +52,7 @@ const Index = () => {
         {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
 
-      {/* Mobile Backdrop - Only on mobile when menu is open */}
+      {/* Mobile Backdrop */}
       {isMobileMenuOpen && (
         <div 
           className="fixed inset-0 bg-black/50 z-40 lg:hidden"
@@ -60,7 +60,7 @@ const Index = () => {
         />
       )}
 
-      {/* Sidebar - Fixed on desktop, sliding on mobile */}
+      {/* Sidebar - Always visible on desktop, sliding on mobile */}
       <div className={`
         fixed lg:static inset-y-0 left-0 z-40 w-64
         transform lg:transform-none transition-transform duration-300 ease-in-out
@@ -69,7 +69,7 @@ const Index = () => {
         <Sidebar activeSection={activeSection} onNavigate={scrollToSection} />
       </div>
       
-      {/* Main Content - Properly offset on desktop, full width on mobile */}
+      {/* Main Content - Always offset by sidebar width on desktop */}
       <main className="flex-1 lg:ml-0 overflow-y-auto">
         <section id="about" className="min-h-screen p-4 md:p-6 lg:p-8 pt-16 lg:pt-8">
           <About />
