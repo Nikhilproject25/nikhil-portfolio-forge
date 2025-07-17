@@ -1,7 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, Code } from 'lucide-react';
 
 const links = [
   {
@@ -17,6 +17,13 @@ const links = [
     url: 'https://www.linkedin.com/in/nikhil-k-bb6304228/',
     icon: Linkedin,
     color: 'bg-blue-600 hover:bg-blue-700'
+  },
+  {
+    title: 'LeetCode',
+    description: 'Check out my problem-solving skills and algorithmic thinking',
+    url: 'https://leetcode.com/u/nU9UHSuW4E/',
+    icon: Code,
+    color: 'bg-orange-600 hover:bg-orange-700'
   }
 ];
 
@@ -28,7 +35,7 @@ export const Links = () => {
           Connect With Me
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8">
           {links.map((link, index) => {
             const IconComponent = link.icon;
             return (
@@ -59,24 +66,6 @@ export const Links = () => {
               </Card>
             );
           })}
-        </div>
-        
-        {/* LeetCode Special Highlight */}
-        <div className="bg-gradient-to-r from-orange-400 to-red-500 rounded-xl p-8 text-center text-white animate-fade-in">
-          <h3 className="text-2xl font-bold mb-4">🏆 LeetCode Profile</h3>
-          <p className="text-lg mb-6">
-            Check out my problem-solving skills and algorithmic thinking
-          </p>
-          <Button 
-            size="lg" 
-            variant="secondary" 
-            className="bg-white text-orange-600 hover:bg-gray-100"
-            asChild
-          >
-            <a href="https://leetcode.com/u/nU9UHSuW4E/" target="_blank" rel="noopener noreferrer">
-              View LeetCode Profile
-            </a>
-          </Button>
         </div>
       </div>
     </div>
