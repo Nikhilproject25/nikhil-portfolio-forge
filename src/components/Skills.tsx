@@ -1,70 +1,28 @@
 
-import { 
-  Coffee, Database, Cloud, Code, Globe, Cpu, 
-  Settings, GitBranch, Package, TestTube, 
-  Server, Container, Wrench, Play, Shield
-} from 'lucide-react';
-
 const skillCategories = [
   {
     title: 'Languages',
-    skills: [
-      { name: 'Java', icon: Coffee },
-      { name: 'Python', icon: Code },
-      { name: 'JavaScript', icon: Globe },
-      { name: 'TypeScript', icon: Globe },
-      { name: 'SQL', icon: Database }
-    ]
+    skills: ['Java', 'Python', 'JavaScript', 'TypeScript', 'SQL']
   },
   {
     title: 'Frameworks',
-    skills: [
-      { name: 'Spring Boot', icon: Coffee },
-      { name: 'Hibernate', icon: Database },
-      { name: 'Node.js', icon: Server },
-      { name: 'React.js', icon: Globe },
-      { name: 'Angular', icon: Globe }
-    ]
+    skills: ['Spring Boot', 'Hibernate', 'Node.js', 'React.js', 'Angular']
   },
   {
     title: 'Databases',
-    skills: [
-      { name: 'PostgreSQL', icon: Database },
-      { name: 'MongoDB', icon: Database },
-      { name: 'MySQL', icon: Database },
-      { name: 'CosmosDB', icon: Database }
-    ]
+    skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'CosmosDB']
   },
   {
     title: 'DevOps & Infrastructure',
-    skills: [
-      { name: 'Docker', icon: Container },
-      { name: 'Kubernetes', icon: Container },
-      { name: 'Jenkins', icon: Settings },
-      { name: 'Git', icon: GitBranch },
-      { name: 'GitHub Actions', icon: Play }
-    ]
+    skills: ['Docker', 'Kubernetes', 'Jenkins', 'Git', 'GitHub Actions']
   },
   {
     title: 'Cloud Platforms',
-    skills: [
-      { name: 'AWS (Lambda, EC2, S3)', icon: Cloud },
-      { name: 'GCP (App Engine, Cloud Functions)', icon: Cloud },
-      { name: 'Azure', icon: Cloud }
-    ]
+    skills: ['AWS (Lambda, EC2, S3)', 'GCP (App Engine, Cloud Functions)', 'Azure']
   },
   {
     title: 'Other Technologies',
-    skills: [
-      { name: 'Kafka', icon: Server },
-      { name: 'Spark', icon: Cpu },
-      { name: 'Flyway', icon: Database },
-      { name: 'JUnit', icon: TestTube },
-      { name: 'Mockito', icon: TestTube },
-      { name: 'TDD', icon: Shield },
-      { name: 'Agile', icon: Settings },
-      { name: 'CI/CD', icon: Play }
-    ]
+    skills: ['Kafka', 'Spark', 'Flyway', 'JUnit', 'Mockito', 'TDD', 'Agile', 'CI/CD']
   }
 ];
 
@@ -84,19 +42,14 @@ export const Skills = () => {
               {category.title}
             </h3>
             <div className="space-y-2">
-              {category.skills.map((skill) => {
-                const IconComponent = typeof skill === 'string' ? Code : skill.icon;
-                const skillName = typeof skill === 'string' ? skill : skill.name;
-                return (
-                  <div 
-                    key={skillName}
-                    className="bg-blue-600/20 text-blue-300 px-3 py-2 rounded-lg text-xs md:text-sm font-medium hover:bg-blue-600/30 transition-colors duration-200 flex items-center space-x-2"
-                  >
-                    <IconComponent className="w-4 h-4 flex-shrink-0" />
-                    <span className="whitespace-nowrap">{skillName}</span>
-                  </div>
-                );
-              })}
+              {category.skills.map((skill) => (
+                <div 
+                  key={skill}
+                  className="bg-blue-600/20 text-blue-300 px-3 py-2 rounded-lg text-xs md:text-sm font-medium hover:bg-blue-600/30 transition-colors duration-200"
+                >
+                  {skill}
+                </div>
+              ))}
             </div>
           </div>
         ))}
