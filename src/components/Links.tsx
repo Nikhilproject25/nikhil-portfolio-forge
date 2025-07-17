@@ -1,7 +1,8 @@
 
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Github, Linkedin, Code } from 'lucide-react';
+import { Github, Linkedin, Code, Download } from 'lucide-react';
 
 const links = [
   {
@@ -23,7 +24,15 @@ const links = [
     description: 'Check out my problem-solving skills and algorithmic thinking',
     url: 'https://leetcode.com/u/nU9UHSuW4E/',
     icon: Code,
-    color: 'bg-orange-600 hover:bg-orange-700'
+    color: 'bg-gray-900 hover:bg-gray-800'
+  },
+  {
+    title: 'Resume',
+    description: 'Download my complete resume and portfolio',
+    url: '/lovable-uploads/407ab40e-b6d7-4ee8-8095-a8c6f9197d2b.png',
+    icon: Download,
+    color: 'bg-orange-600 hover:bg-orange-700',
+    isDownload: true
   }
 ];
 
@@ -35,7 +44,7 @@ export const Links = () => {
           Connect With Me
         </h2>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {links.map((link, index) => {
             const IconComponent = link.icon;
             return (
@@ -56,11 +65,21 @@ export const Links = () => {
                   <p className="text-gray-600 mb-6">{link.description}</p>
                   <Button 
                     className={`w-full text-white ${link.color} transition-colors duration-200`}
-                    asChild
+                    asChild={!link.isDownload}
                   >
-                    <a href={link.url} target="_blank" rel="noopener noreferrer">
-                      Visit {link.title}
-                    </a>
+                    {link.isDownload ? (
+                      <a 
+                        href={link.url} 
+                        download="Nikhil_Kumar_Resume.png"
+                        className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full text-white"
+                      >
+                        Download {link.title}
+                      </a>
+                    ) : (
+                      <a href={link.url} target="_blank" rel="noopener noreferrer">
+                        Visit {link.title}
+                      </a>
+                    )}
                   </Button>
                 </CardContent>
               </Card>
@@ -71,3 +90,4 @@ export const Links = () => {
     </div>
   );
 };
+
