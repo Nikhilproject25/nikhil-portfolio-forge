@@ -28,7 +28,7 @@ const links = [
   {
     title: 'Resume',
     description: 'Download my complete resume and portfolio',
-    url: '/lovable-uploads/407ab40e-b6d7-4ee8-8095-a8c6f9197d2b.png',
+    url: '/lovable-uploads/9692eb79-8dc1-4541-8dfe-dca47d7f65fb.png',
     icon: Download,
     color: 'bg-orange-600 hover:bg-orange-700',
     isDownload: true
