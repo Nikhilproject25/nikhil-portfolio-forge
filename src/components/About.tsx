@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin, Github, Linkedin, Download } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Download, Code } from 'lucide-react';
 
 export const About = () => {
   return (
@@ -93,25 +93,26 @@ export const About = () => {
                   <Linkedin className="w-4 h-4 md:w-5 md:h-5" />
                   <span>LinkedIn</span>
                 </a>
-              </div>
-              
-              <div className="mt-3 flex flex-col sm:flex-row gap-3">
+                
                 <a 
                   href="https://leetcode.com/u/nU9UHSuW4E/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-block bg-orange-600 text-white px-3 md:px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors text-sm md:text-base flex-1 text-center"
+                  className="flex items-center space-x-2 text-gray-300 hover:text-blue-400 transition-colors text-sm md:text-base"
                 >
-                  LeetCode Profile
+                  <Code className="w-4 h-4 md:w-5 md:h-5" />
+                  <span>LeetCode</span>
                 </a>
-                
+              </div>
+              
+              <div className="mt-3">
                 <a 
                   href="/lovable-uploads/9692eb79-8dc1-4541-8dfe-dca47d7f65fb.png" 
-                  download="Nikhil_Kumar_Resume.pdf"
-                  className="inline-flex items-center justify-center space-x-2 bg-green-600 text-white px-3 md:px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm md:text-base flex-1"
+                  download="Nikhil_Kumar_Resume.png"
+                  className="inline-flex items-center justify-center space-x-2 bg-green-600 text-white px-3 md:px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm md:text-base w-full"
                 >
                   <Download className="w-4 h-4" />
-                  <span>Resume</span>
+                  <span>Download Resume</span>
                 </a>
               </div>
             </div>
