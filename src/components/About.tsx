@@ -55,7 +55,7 @@ export const About = () => {
           <div className="space-y-3 md:space-y-4">
             <div className="flex items-center space-x-3 text-gray-300 text-sm md:text-base">
               <Mail className="w-4 h-4 md:w-5 md:h-5 text-blue-400 flex-shrink-0" />
-              <a href="mailto:nikhilpersonall2299@gmail.com" className="hover:text-blue-400 transition-colors break-all">
+              <a href="mailto:nikhilpersonall2299@gmail.com" className="hover:text-blue-400 transition-colors break-words">
                 nikhilpersonall2299@gmail.com
               </a>
             </div>
