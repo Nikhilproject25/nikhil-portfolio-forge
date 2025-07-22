@@ -8,7 +8,6 @@ import { AITools } from '@/components/AITools';
 import { Projects } from '@/components/Projects';
 import { Experience } from '@/components/Experience';
 import { Education } from '@/components/Education';
-import { Links } from '@/components/Links';
 import { Contact } from '@/components/Contact';
 
 const Index = () => {
@@ -17,7 +16,7 @@ const Index = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'skills', 'ai-tools', 'experience', 'projects', 'education', 'links', 'contact'];
+      const sections = ['about', 'skills', 'ai-tools', 'experience', 'projects', 'education', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -96,11 +95,7 @@ const Index = () => {
           <Education />
         </section>
 
-        <section id="links" className="min-h-screen p-4 md:p-6 lg:p-8">
-          <Links />
-        </section>
-
-        <section id="contact" className="min-h-screen p-4 md:p-6 lg:p-8 bg-gray-800/50">
+        <section id="contact" className="min-h-screen p-4 md:p-6 lg:p-8">
           <Contact />
         </section>
       </main>
