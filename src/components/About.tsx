@@ -43,7 +43,7 @@ export const About = () => {
         </div>
         
         {/* Profile card - Stacked on mobile, sidebar on desktop */}
-        <div className="bg-gray-800 rounded-lg p-4 md:p-6 order-1 lg:order-2">
+        <div className="bg-gray-800 rounded-lg p-4 md:p-6 lg:p-8 order-1 lg:order-2 lg:min-w-[350px]">
           <div className="w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 bg-gray-700 rounded-full mx-auto mb-6 flex items-center justify-center">
             <img 
               src="/lovable-uploads/701c4f21-f9f2-4793-830e-4aa9ab43485e.png" 
