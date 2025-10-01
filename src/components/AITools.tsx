@@ -12,10 +12,8 @@ const aiTools = [
 ];
 
 const specialties = [
-  'Multi-agent orchestration',
   'Prompt Engineering',
   'API Integration',
-  'AI Workflow Automation',
   'Model Fine-tuning',
   'AI-powered Development',
   'Vibe Coding'
